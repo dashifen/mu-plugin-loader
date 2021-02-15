@@ -109,7 +109,7 @@ class Loader extends AbstractMustUsePluginHandler implements LoaderInterface
   public function initialize(): void
   {
     if (!$this->isInitialized()) {
-      $this->addAction('after_plugin_row_wp-mu-plugin-loader.php', 'showLoadedPlugins');
+      $this->addAction('after_plugin_row_mu-plugin-loader.php', 'showLoadedPlugins');
     }
   }
   
