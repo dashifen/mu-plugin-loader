@@ -109,7 +109,7 @@ class Loader extends AbstractMustUsePluginHandler implements LoaderInterface
   public function initialize(): void
   {
     if (!$this->isInitialized()) {
-      $this->addAction('after_plugin_row_mu-plugin-loader.php', 'showLoadedPlugins');
+      $this->addAction('after_plugin_row_mu-plugin-loader-loader.php', 'showLoadedPlugins');
     }
   }
   
@@ -127,10 +127,10 @@ class Loader extends AbstractMustUsePluginHandler implements LoaderInterface
       $pluginData = get_plugin_data($plugin, false);
       
       // to help identify the ones that we've loaded instead of any that WP
-      // core might have loaded for us, we add a check mark as a prefix to the
+      // core might have loaded for us, we add an em dash as a prefix to the
       // plugin's name.
       
-      $pluginData['Name'] = '✅&nbsp;&nbsp;' . $pluginData['Name'];
+      $pluginData['Name'] = '— ' . $pluginData['Name'];
       $table->single_row([$plugin, $pluginData]);
     }
   }
