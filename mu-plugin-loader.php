@@ -1,11 +1,5 @@
 <?php
 /**
- * Plugin Name: MU Loader
- * Description: A mu-plugin that loads other MU plugins.
- * Author URI: mailto:dashifen@dashifen.com
- * Author: David Dashifen Kees
- * Version: 1.0.0
- *
  * @noinspection PhpStatementHasEmptyBodyInspection
  * @noinspection PhpIncludeInspection
  */

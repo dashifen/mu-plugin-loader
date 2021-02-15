@@ -22,5 +22,8 @@
   "config": {
     "optimize-autoloader": true,
     "sort-packages": true
+  },
+  "scripts": {
+    "post-update-cmd": "cp mu-plugin-loader-loader.php ../mu-plugin-loader-loader.php"
   }
 }
