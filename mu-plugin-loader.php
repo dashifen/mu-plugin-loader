@@ -7,9 +7,7 @@
 use Dashifen\MUPluginLoader\Loader;
 use Dashifen\WPHandler\Handlers\HandlerException;
 
-if (file_exists($autoloader = dirname(ABSPATH) . '/deps/vendor/autoload.php'));
-elseif (file_exists($autoloader = dirname(ABSPATH) . '/vendor/autoload.php'));
-elseif (file_exists($autoloader = ABSPATH . 'vendor/autoload.php'));
+if (file_exists($autoloader = ABSPATH . 'wp-content/vendor/autoload.php'));
 else $autoloader = 'vendor/autoload.php';
 require_once $autoloader;
 
