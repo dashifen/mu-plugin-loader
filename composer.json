@@ -1,5 +1,5 @@
 {
-  "name": "dashifen/mu-plugin-loader",
+  "name": "dashifen/wp-mu-plugin-loader",
   "description": "A WP mu-plugin that loads other mu-plugins.",
   "minimum-stability": "stable",
   "type": "wordpress-muplugin",
