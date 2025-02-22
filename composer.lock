@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5bf4e68073b7456a4f3c28e4cbf0bb38",
+    "content-hash": "11c74c0e91b60ccd2ef2ec1a0ba06d4a",
     "packages": [
         {
             "name": "dashifen/case-changing-trait",

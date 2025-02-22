@@ -1,5 +1,5 @@
 {
-  "name": "dashifen/wp-mu-plugin-loader",
+  "name": "dashifen/mu-plugin-loader",
   "description": "A WP mu-plugin that loads other mu-plugins.",
   "minimum-stability": "stable",
   "type": "wordpress-muplugin",
@@ -12,7 +12,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Dashifen\\MUPluginLoader\\": "src"
+      "Dashifen\\Plugins\\MustUse\\MUPluginLoader\\": "src"
     }
   },
   "require": {

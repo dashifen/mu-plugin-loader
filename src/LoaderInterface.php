@@ -1,6 +1,6 @@
 <?php
 
-namespace Dashifen\MUPluginLoader;
+namespace Dashifen\Plugins\MustUse\MUPluginLoader;
 
 use Dashifen\WPHandler\Handlers\Plugins\PluginHandlerInterface;
 

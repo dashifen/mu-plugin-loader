@@ -3,7 +3,7 @@
  * @noinspection PhpIncludeInspection
  */
 
-namespace Dashifen\MUPluginLoader;
+namespace Dashifen\Plugins\MustUse\MUPluginLoader;
 
 use DirectoryIterator;
 use WP_Plugins_List_Table;
