@@ -67,7 +67,7 @@ class Loader extends AbstractMustUsePluginHandler implements LoaderInterface
       // want to see if we can find a WP plugin file in the folder.  if we do
       // find such a file, we'll add it to an array which we return below.
       // notice we also skip this plugin's folder because we know it's already
-      // been loaded or we wouldn't be here!
+      // been loaded, or we wouldn't be here!
       
       if (
         !$muPlugin->isDot()
@@ -78,7 +78,7 @@ class Loader extends AbstractMustUsePluginHandler implements LoaderInterface
           
           // just like the outer loop, the DirectoryIterator here will grab
           // the relative folder links and other non-file based details.  so,
-          // if this is a file, we get it's path, and if it's extension is php,
+          // if this is a file, we get its path, and if it's extension is php,
           // we see if it's a plugin.  if it is, we add it to the list.
           
           if ($file->isFile()) {

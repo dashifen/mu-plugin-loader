@@ -16,8 +16,8 @@
     }
   },
   "require": {
-    "php": ">=7.4",
-    "dashifen/wp-handler": "^10.0"
+    "php": ">=8.4",
+    "dashifen/wp-handler": "^11.0"
   },
   "config": {
     "optimize-autoloader": true,
