@@ -3,7 +3,7 @@
  * @noinspection PhpIncludeInspection
  */
 
-namespace Dashifen\Plugins\MustUse\MUPluginLoader;
+namespace Dashifen\WordPress\Plugins\MustUse\MUPluginLoader;
 
 use DirectoryIterator;
 use WP_Plugins_List_Table;
@@ -130,7 +130,7 @@ class Loader extends AbstractMustUsePluginHandler implements LoaderInterface
       // core might have loaded for us, we add an em dash as a prefix to the
       // plugin's name.
       
-      $pluginData['Name'] = '— ' . $pluginData['Name'];
+      $pluginData['Name'] = '➡️ ' . $pluginData['Name'];
       $table->single_row([$plugin, $pluginData]);
     }
   }

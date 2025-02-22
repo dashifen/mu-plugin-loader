@@ -1,11 +1,9 @@
 <?php
-/**
- * @noinspection PhpStatementHasEmptyBodyInspection
- * @noinspection PhpIncludeInspection
- */
 
-use Dashifen\MUPluginLoader\Loader;
+namespace Dashifen\WordPress\Plugins\MustUse;
+
 use Dashifen\WPHandler\Handlers\HandlerException;
+use Dashifen\WordPress\Plugins\MustUse\MUPluginLoader\Loader;
 
 if (!class_exists('Dashifen\MUPluginLoader\Loader')) {
   require_once 'vendor/autoload.php';
@@ -19,11 +17,6 @@ if (!class_exists('Dashifen\MUPluginLoader\Loader')) {
       $loader->loadPlugins();
     }
   } catch (HandlerException $e) {
-    
-    // since this is a MU plugin, there's not much we can do other than
-    // print the exception's message on-screen and die.  luckily, the
-    // likelihood of an exception in this on is slim to none.
-    
-    wp_die($e->getMessage());
+    Loader::catcher($e);
   }
 })();

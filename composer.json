@@ -12,7 +12,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Dashifen\\Plugins\\MustUse\\MUPluginLoader\\": "src"
+      "Dashifen\\WordPress\\Plugins\\MustUse\\MUPluginLoader\\": "src"
     }
   },
   "require": {
