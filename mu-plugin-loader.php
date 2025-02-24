@@ -5,7 +5,7 @@ namespace Dashifen\WordPress\Plugins\MustUse;
 use Dashifen\WPHandler\Handlers\HandlerException;
 use Dashifen\WordPress\Plugins\MustUse\MUPluginLoader\Loader;
 
-if (!class_exists('Dashifen\MUPluginLoader\Loader')) {
+if (!class_exists(Loader::class)) {
   require_once 'vendor/autoload.php';
 }
 
