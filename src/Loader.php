@@ -84,7 +84,7 @@ class Loader extends AbstractMustUsePluginHandler implements LoaderInterface
           if ($file->isFile()) {
             $path = $file->getPathname();
             if (pathinfo($path, PATHINFO_EXTENSION) === 'php') {
-              $pluginInfo = get_plugin_data($path);
+              $pluginInfo = get_plugin_data($path, translate: false);
               if (!empty($pluginInfo['Name'])) {
                 $this->plugins[] = $path;
               }
